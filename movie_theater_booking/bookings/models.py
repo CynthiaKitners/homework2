@@ -2,7 +2,7 @@ import os
 import django
 
 # os.environ.setdefault("DJANGO_SETTINGS_MODULE", "bookings.settings")
-# django.setup()
+# django.setu
 
 
 from django.db import models
