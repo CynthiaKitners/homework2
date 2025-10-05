@@ -10,7 +10,7 @@ from .models import Question
 permission_classes = [AllowAny]
 
 def index(request):
-    latest_questions = Question.objects.order_by('-created_at')[:5]
+    latest_questions = Question.objects.order_by('-pub_date')
     return render(request, 'bookings/index.html', {'latest_questions': latest_questions})
 
 

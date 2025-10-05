@@ -56,8 +56,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],  # can remain empty if using app templates
-        'APP_DIRS': True,  # must be True
+        'DIRS': [BASE_DIR / 'templates'],
+        'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
@@ -68,10 +68,6 @@ TEMPLATES = [
         },
     },
 ]
-
-
-
-
 
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
