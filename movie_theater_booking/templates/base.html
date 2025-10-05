@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Default Title{% endblock %}</title>
+    <!-- You can include CSS files here -->
+</head>
+<body>
+    <!-- Optional site header -->
+    <header>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about/">About</a>
+            <!-- Add more links as needed -->
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        {% block content %}
+        <!-- Default content if a child template doesn't override -->
+        <p>Welcome to the site!</p>
+        {% endblock %}
+    </main>
+
+    <!-- Optional footer -->
+    <footer>
+        <p>&copy; 2025 My Site</p>
+    </footer>
+</body>
+</html>
+git 

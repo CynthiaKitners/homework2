@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    1 {% extends ’ bookings / base . html ’ %}
+2 {% block title %} Movie List {% endblock %}
+3 {% block content %}
+4 <h2 > Available Movies </h2 >
+5 <ul class ="list - group ">
+6 {% for movie in movies %}
+7 <li class ="list -group - item ">
+8 <h5 >{{ movie . title }} </h5 >
+9 <p>{{ movie . description }} </p>
+10 <a href ="{% url ’book_seat ’ movie .id %}" class ="btn btn - primary ">
+Book Now </a>
+11 </li >
+12 {% endfor %}
+13 </ul >
+14 {% endblock %}
+
+
+
+</body>
+</html>
